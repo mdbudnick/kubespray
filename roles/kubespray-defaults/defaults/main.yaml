@@ -387,10 +387,10 @@ k8s_image_pull_policy: IfNotPresent
 dashboard_enabled: false
 
 # Addons which can be enabled
-helm_enabled: false
+helm_enabled: true
 krew_enabled: false
 registry_enabled: false
-metrics_server_enabled: false
+metrics_server_enabled: true
 enable_network_policy: true
 local_path_provisioner_enabled: false
 local_volume_provisioner_enabled: false
@@ -402,16 +402,16 @@ gcp_pd_csi_enabled: false
 vsphere_csi_enabled: false
 upcloud_csi_enabled: false
 csi_snapshot_controller_enabled: false
-persistent_volumes_enabled: false
+persistent_volumes_enabled: true
 cephfs_provisioner_enabled: false
 rbd_provisioner_enabled: false
 ingress_nginx_enabled: false
 ingress_alb_enabled: false
-cert_manager_enabled: false
+cert_manager_enabled: true
 expand_persistent_volumes: false
 metallb_enabled: false
 metallb_speaker_enabled: "{{ metallb_enabled }}"
-argocd_enabled: false
+argocd_enabled: true
 
 ## When OpenStack is used, Cinder version can be explicitly specified if autodetection fails (Fixed in 1.9: https://github.com/kubernetes/kubernetes/issues/50461)
 # openstack_blockstorage_version: "v1/v2/auto (default)"
